@@ -331,7 +331,10 @@ MonoBehaviour:
     xMin: -6
     xMax: 6
     zMin: -4
-    zMax: 8
+    zMax: 14
+  shot: {fileID: 1500628891703956, guid: 95d35365d66e3db44ad9f915b54f4ea9, type: 2}
+  shotSpawn: {fileID: 1800998757}
+  fireRate: 0.25
 --- !u!54 &466408700
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -641,8 +644,36 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: d9808401c68af274a8edfbed3d1b53c7, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d9808401c68af274a8edfbed3d1b53c7, type: 3}
   m_IsPrefabAsset: 0
+--- !u!1 &1800998756
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1800998757}
+  m_Layer: 0
+  m_Name: Shot spawn
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1800998757
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1800998756}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 1.25}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 466408703}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
